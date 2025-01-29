@@ -1,0 +1,46 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - gram_mitra_yojna
+  - tirth_gram_yojna
+  - overview
+
+responses:
+  utter_greet:
+  - text: "Hello! Welcome to Amreli Information Chatbot. Please ask me what you want to know about?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://imgur.com/gallery/panda-eating-WOazuiF#/t/aww"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Thank you for using our service! Have a great day."
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_gram_mitra_yojna:
+  - text: "Question asked about gram_mitra_yojna"
+
+  utter_tirth_gram_yojna:
+  - text: "Question asked about tirth_gram_yojna"
+
+  utter_overview:
+  - text: "Show all the various schemes for Amreli District. Would you like to know more about any schemes/yojna"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
