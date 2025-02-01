@@ -1,0 +1,83 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+# - story: for_tirth_gram_yojna
+#   steps:
+#   # - intent: greet
+#   - action: utter_greet
+#   - intent: overview
+#   - action: utter_overview
+#   - intent: tirth_gram_yojna
+#   - action: utter_tirth_gram_yojna
+#   - action: utter_did_that_help
+#   - intent: affirm
+#   - action: utter_happy
+#   - action: utter_goodbye
+
+# - story: for_tirth_gram_yojna2
+#   steps:
+#   # - intent: greet
+#   - action: utter_greet
+#   # - intent: overview
+#   - action: utter_overview
+#   - intent: tirth_gram_yojna
+#   - action: utter_tirth_gram_yojna
+#   - action: utter_did_that_help
+#   - intent: affirm
+#   - action: utter_happy
+#   - action: utter_goodbye
+
+# - story: for_gram_mitra_yojna
+#   steps:
+#   - action: utter_greet
+#   - action: utter_overview
+#   - intent: gram_mitra_yojna
+#   - action: utter_gram_mitra_yojna
+#   - action: utter_did_that_help
+#   - intent: affirm
+#   - action: utter_happy
+#   - action: utter_goodbye
+
+# - story: for_gram_mitra_yojna2
+#   steps:
+#   - action: utter_greet
+#   # - action: utter_overview
+#   - intent: gram_mitra_yojna
+#   - action: utter_gram_mitra_yojna
+#   - action: utter_did_that_help
+#   - intent: affirm
+#   - action: utter_happy
+#   - action: utter_goodbye
+  
+- story: for_overview_only
+  steps:
+    - action: utter_greet
+    - action: utter_overview

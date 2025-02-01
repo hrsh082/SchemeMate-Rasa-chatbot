@@ -1,0 +1,300 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+# - intent: after_greet
+#   examples: |
+#     - 
+
+- intent: gram_mitra_yojna
+  examples: |
+    - What is the Gram-Mitra Yojna?
+    
+    - GramMitraYojna?
+    
+    - whats gram mitra yojna
+    
+    - gram mitra yojna shu che?
+    
+    - gram mitra yojna kya hai?
+    
+    - Gram mitra yojna su?
+
+    - How can Gram-Mitra Yojna help rural areas?
+    - How gram mitra yojna help rural area?
+
+    - What kind of support does Gram-Mitra Yojna provide?
+    - support given by gram mitra yojna?
+
+- intent: gram_mitra_yojna_process
+  examples: |
+    - How do I apply for Gram-Mitra yojna?
+    - What steps are involved in applying for Gram-Mitra yojna?
+    - Can you explain the process to apply for Gram-Mitra yojna?
+    - Where should I submit my Gram-Mitra yojna application?
+    - What is the registration process for Gram-Mitra yojna?
+    - Who can help me with the application process?
+    - gram mitra yojna process
+    - gram mitra application
+
+    - Do I need to pay any fee to apply for Gram-Mitra yojna?
+    - Is there an application charge for Gram-Mitra yojna?
+    - Does Gram-Mitra yojna have any hidden fees?
+    - Is applying for Gram-Mitra yojna free of cost?
+    - Will I need to make any payments while applying?
+    - gram mitra yojna fees
+    - gram mitra cost
+
+    - What documents are required to apply for Gram Mitra yojna?
+    - Which documents do I need for Gram Mitra yojna application?
+    - Gram mitra yojna documents
+
+    - Where can I find the Gram-Mitra yojna application form?
+    - Can I download the Gram Mitra yojna application online?
+
+- intent: gram_mitra_yojna_benefits
+  examples: |
+    - Who can benefit from the Gram-Mitra yojna?
+    - gram mitra benefits
+    - what are the benefits of gram mitra
+    - gram mitra na benefits shu che?
+    - gram mitra yojna na benefits su che
+    - Am I eligible for the Gram-Mitra yojna?
+    - Can I take part in the Gram Mitra yojna?
+    - Who is eligible for the Gram Mitra yojna program?
+
+    - Can a group apply for the Gram Mitra yojna?
+    - Is it possible for a community to apply for gram mitra program?
+    - Can multiple people or communities apply together for Gram Mitra yojna?
+    - Does the Gram Mitra yojna allow group applications?
+    - Can Gram Mitra yojna be applied for by a community or only individuals?
+
+    - Are there any ongoing initiatives under the Gram-Mitra yojna?
+    - What projects are happening right now under Gram Mitra yojna?
+    - Are there any active programs or projects associated with gram mitra scheme?
+    - Is the Gram Mitra yojna running any projects currently?
+    - What are the current projects under Gram Mitra yojna?
+
+- intent: gmy_salary_elegibility
+  examples: |
+    - My salary is 11 lpa. Am i eligible?
+    - My salary is 11 lpa. Can i apply?
+    - My salary is 1 lpa. Am I eligible?
+    - My salary is 6 lpa. Am i eligible?
+    - My salary is 0.7 lpa. Am i eligible?
+    - My salary is 5 lpa. Am i eligible?
+    - My salary is 1000 per month. Am i eligible?
+    - My salary is 1000 per month. Can I apply?
+    - My salary is 3000 per month. Am i eligible?
+    - My salary is 1200 per month. Am I eligible?
+    - My salary is 3600 per month. Am i eligible?
+
+    - My salary is 110000 per annum. Am i eligible?
+    - My salary is 110000 per annum. Can I apply?
+    - My salary is 240100 per annum. Am i eligible?
+    - My salary is 53000 per annum. Am I eligible?
+    - My salary is 21000 per annum. Am i eligible?
+
+- intent: gmy_can_i_apply
+  examples: |
+    - My age is 20, can I apply?
+    - My age is 20, am i eligible?
+    - My age is 17, can I apply?
+    - My age is 35, can I apply?
+    - My age is 47, can I apply?
+    - I am a student can i apply
+    - I am a student am i eligible?
+    - I am a college student can i apply?
+    - I am a college student am I eligible?
+    - I am an office worker am I eligible?
+    - I am an office worker can i apply?
+
+- intent: gmy_auth
+  examples: |
+    - Who is authority for my document?
+    - Who are all authorities who will check my document
+    - who will authorize
+    - authorize who?
+
+- intent: gmy_rural_dev
+  examples: |
+    - Help in rural development how?
+    - how help in development
+    - what help in development
+    - How does the scheme help in enhancing livelihood opportunities in rural areas.
+    - How does the scheme help in promoting development.
+
+- intent: gmy_awarness
+  examples: |
+    - What are the awarness programs?
+    - awarness programs in Gram mitra yojna?
+    - which are the awarness programs
+    - give awarness how?
+    - give awarness in what way
+
+- intent: gmy_gov_service
+  examples: | 
+    - What are the government services?
+    - what are the services under gram mitra yojna?
+    - what government services can be accessed through gram mitra yojna?
+    - gov services?
+- intent: tirth_gram_yojna
+  examples: |
+    - What is the Tirth Gram yojna?
+    - Tirth Gram Yojna?
+    - tirthgramyojna
+    - What benefits are provided under the Tirth Gram yojna?
+    - whats tirth gram yojna
+    - tirth gram yojna shu che?
+    - tirth gram yojna kya hai?
+    - tirth gram yojna su?
+  
+- intent: tirth_gram_yojna_process
+  examples: |
+      - How do I apply for Tirth Gram yojna?
+      - What steps are involved in applying for Tirth Gram yojna?
+      - Can you explain the process to apply for Tirth Gram yojna?
+      - Where should I submit my Tirth Gram yojna application?
+      - What is the registration process for Tirth Gram yojna?
+      - Who can help me with the application process?
+      - Tirth gram yojna process
+      - Tirth gram application
+
+      - Do I need to pay any fee to apply for Tirth Gram yojna?
+      - Is there an application charge for Tirth Gram yojna?
+      - Does Tirth Gram yojna have any hidden fees?
+      - Is applying for Tirth Gram yojna free of cost?
+      - Will I need to make any payments while applying?
+      - Tirth gram yojna fees
+      - Tirth gram cost
+
+      - What documents are required to apply for Tirth gram yojna?
+      - Which documents do I need for Tirth gram yojna application?
+      - Tirth gram yojna documents
+
+      - Where can I find the Tirth Gram yojna application form?
+      - Can I download the Tirth gram yojna application online?
+
+- intent: tirth_gram_yojna_benefits
+  examples: |
+    - Who can benefit from the Tirth-Gram yojna?
+    - trith gram benefit
+    - benefit of tirth gram
+    - Am I eligible for the Tirth-Gram yojna?
+    - Can I take part in the Tirth Gram yojna?
+    - Who is eligible for the Tirth Gram yojna program?
+    - Can a group apply for the Tirth Gram yojna?
+    - Is it possible for a community to apply for Tirth Gram program?
+    - Can multiple people or communities apply together for Tirth Gram yojna?
+    - Does the Tirth Gram yojna allow group applications?
+    - Can Tirth Gram yojna be applied for by a community or only individuals?
+
+    - Are there any ongoing initiatives under the Gram-Mitra yojna?
+    - What projects are happening right now under Tirth Gram yojna?
+    - Are there any active programs or projects associated with Tirth Gram scheme?
+    - Is the Tirth Gram yojna running any projects currently?
+    - What are the current projects under Tirth Gram yojna?
+
+- intent: overview
+  examples: |
+    - Amreli District Schemes
+    - What are the schemes for amreli
+    - Amreli yojna
+    - Amreli district yojna
+    - whats schemes
+    - All amreli yojna
+    - Show all schemes
+    - show all yojnas
+    - Amreli ma available schemes su che?
+    - Kayi yojna chalu che amreli ma?
+    - Amreli district ni yojna vistar ma batao.
+    - Scheme ni list moklo.
+    - Amreli ma loko mate kai yojnao che?

@@ -1,0 +1,96 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+# About Tirth-Gram Yojna
+- rule: Say about tirth gram yojna
+  steps:
+  - intent: tirth_gram_yojna
+  - action: utter_tirth_gram_yojna
+
+- rule: Say about tirth gram yojna process
+  steps:
+  - intent: tirth_gram_yojna_process
+  - action: utter_tirth_gram_yojna_process
+
+- rule: Say about tirth gram yojna benefit
+  steps:
+  - intent: tirth_gram_yojna_benefit
+  - action: utter_tirth_gram_yojna_benefits
+
+
+# About Gram-Mitra Yojna
+- rule: Say about gram mitra yojna
+  steps:
+  - intent: gram_mitra_yojna
+  - action: utter_gram_mitra_yojna
+
+- rule: Say about gram mitra yojna process
+  steps:
+  - intent: gram_mitra_yojna_process
+  - action: utter_gram_mitra_yojna_process
+
+- rule: Say about gram mitra yojna benefits
+  steps:
+  - intent: gram_mitra_yojna_benefits
+  - action: utter_gram_mitra_yojna_benefits
+
+# - rule: Say about sgsg
+#   steps:
+#   - intent: sgsg_yojna
+#   - action: utter_sgsg_yojna
+
+# - rule: Say about sgsg process
+#   steps:
+#   - intent: sgsg_yojna_process
+#   - action: utter_sgsg_yojna_process
+
+# - rule: Say about sgsg benefits
+#   steps:
+#   - intent: sgsg_yojna_benefits
+#   - action: utter_sgsg_yojna_benefits
+
+- rule: Salary elegible
+  steps: 
+  - intent: gmy_salary_elegibility
+  - action: utter_gmy_salary_elegibility
+
+- rule: Can you apply
+  steps: 
+  - intent: gmy_can_i_apply
+  - action: utter_gmy_can_i_apply
+
+- rule: Document authorities
+  steps: 
+  - intent: gmy_auth
+  - action: utter_gmy_auth
+
+- rule: rural dev
+  steps: 
+  - intent: gmy_rural_dev
+  - action: utter_gmy_rural_dev
+
+- rule: Awarness
+  steps: 
+    - intent: gmy_awarness
+    - action: utter_gmy_awarness
+
+- rule: services
+  steps: 
+    - intent: gmy_gov_service
+    - action: utter_gmy_gov_service
+# About Overview
+- rule: Say overview
+  steps:
+  - intent: overview
+  - action: utter_overview
