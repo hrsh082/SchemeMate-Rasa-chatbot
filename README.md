@@ -27,3 +27,5 @@ socketio:
 
 5. After that open browser and access the chatbot from this URL: http://localhost:8000/index.html
 
+**To run this file:**
+Install RASA on your device and copy the contents of these files into your files which will be created by default when you install rasa.
