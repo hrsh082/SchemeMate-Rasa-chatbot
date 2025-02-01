@@ -29,3 +29,7 @@ socketio:
 
 **To run this file:**
 Install RASA on your device and copy the contents of these files into your files which will be created by default when you install rasa.
+
+![RASA_Working3](https://github.com/user-attachments/assets/ab533f1e-855f-4a02-a7bc-fb81d002a010)
+![RASA_Working2](https://github.com/user-attachments/assets/4381a05e-4170-493e-b207-2bc23d6ae91d)
+![RASA_Working1](https://github.com/user-attachments/assets/82f3feb1-5f4f-40df-845c-b190f26d39b4)
