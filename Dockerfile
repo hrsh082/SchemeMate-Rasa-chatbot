@@ -8,16 +8,14 @@ RUN apt-get update && apt-get install -y nginx && rm -rf /var/lib/apt/lists/*
 WORKDIR /app
 COPY . /app
 
-# Train the model
+# Train model
 RUN rasa train
 
-# Copy frontend to nginx
+# Copy frontend files
 RUN rm -rf /var/www/html/*
 RUN cp -r frontend/* /var/www/html/
 
-# Expose ports
 EXPOSE 80 5005
 
-# Start nginx + rasa
-CMD service nginx start && \
-    rasa run --enable-api --cors "*" --port 5005
+# Start nginx and rasa correctly
+CMD ["/bin/bash", "-c", "service nginx start && rasa run --enable-api --cors \"*\" --port 5005"]
