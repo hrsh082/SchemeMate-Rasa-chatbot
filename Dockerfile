@@ -22,5 +22,6 @@ EXPOSE 80
 
 ENTRYPOINT []
 
-CMD ["/bin/bash", "-c", "service nginx start && rasa run --enable-api --cors \"*\" --host 0.0.0.0 --port 5005 --model models"]
+CMD ["/bin/bash", "-c", "service nginx start && rasa run --enable-api --cors \"*\" -i 0.0.0.0 -p 5005 -m models"]
+
 
